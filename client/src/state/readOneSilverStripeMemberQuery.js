@@ -28,9 +28,6 @@ query ReadHistoryViewerSilverStripeMember ($id: ID!, $limit: Int!, $offset: Int!
             FirstName
             Surname
           }
-          Published
-          LiveVersion
-          LatestDraftVersion
           LastEdited
         }
       }
