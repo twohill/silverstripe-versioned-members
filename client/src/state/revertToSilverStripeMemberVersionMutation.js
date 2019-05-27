@@ -2,7 +2,7 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
 const mutation = gql`
-mutation revertMemberToVersion($id:ID!, $toVersion:Int!) {
+mutation revertSilverStripeMemberToVersion($id:ID!, $toVersion:Int!) {
   rollbackMember(
     ID: $id
     ToVersion: $toVersion
@@ -30,7 +30,7 @@ const config = {
   },
   options: {
     // Refetch versions after mutation is completed
-    refetchQueries: ['ReadHistoryViewerMember'],
+    refetchQueries: ['ReadHistoryViewerSilverStripeMember'],
   },
 };
 

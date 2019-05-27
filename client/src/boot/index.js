@@ -1,7 +1,7 @@
 /* global window */
 import Injector from 'lib/Injector';
-import readOneMemberQuery from 'state/readOneMemberQuery';
-import revertToMemberVersionMutation from 'state/revertToMemberVersionMutation';
+import readOneSilverStripeMemberQuery from 'state/readOneSilverStripeMemberQuery';
+import revertToSilverStripeMemberVersionMutation from 'state/revertToSilverStripeMemberVersionMutation';
 
 window.document.addEventListener('DOMContentLoaded', () => {
   // Register GraphQL operations with Injector as transformations
@@ -9,7 +9,7 @@ window.document.addEventListener('DOMContentLoaded', () => {
     'member-history', (updater) => {
       updater.component(
         'HistoryViewer.Form_ItemEditForm',
-        readOneMemberQuery, 'ElementHistoryViewer');
+        readOneSilverStripeMemberQuery, 'ReadHistoryViewerSilverStripeMember');
     }
   );
 
@@ -17,8 +17,8 @@ window.document.addEventListener('DOMContentLoaded', () => {
     'member-history-revert', (updater) => {
       updater.component(
         'HistoryViewerToolbar.VersionedAdmin.HistoryViewer.Member.HistoryViewerVersionDetail',
-        revertToMemberVersionMutation,
-        'MemberRevertMutation'
+        revertToSilverStripeMemberVersionMutation,
+        'SilverStripeMemberRevertMutation'
       );
     }
   );

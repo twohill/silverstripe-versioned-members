@@ -5,8 +5,8 @@ import gql from 'graphql-tag';
 // the query must be set to the "versions" prop on the component that this HOC is
 // applied to for binding implementation.
 const query = gql`
-query ReadHistoryViewerMember ($id: ID!, $limit: Int!, $offset: Int!) {
-  readOneMember(
+query ReadHistoryViewerSilverStripeMember ($id: ID!, $limit: Int!, $offset: Int!) {
+  readOneSilverStripeMember(
     Versioning: {
       Mode: LATEST
     },
