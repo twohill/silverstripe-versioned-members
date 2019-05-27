@@ -8,3 +8,6 @@ SilverStripe\GraphQL\Manager:
             operations:
               readOne: true
               rollback: true
+              publish: false
+              unpublish: false
+              copyToStage: false
