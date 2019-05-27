@@ -11,7 +11,7 @@ class VersionedMemberExtension extends DataExtension
 {
     public function updateCMSFields(FieldList $fields)
     {
-        Requirements::javascript('twohill/silverstripe-versioned-members:client/dist/js/bundle.js');
-        $fields->addFieldToTab('Root.History', HistoryViewerField::create('History'));
+        //Requirements::javascript('twohill/silverstripe-versioned-members:client/dist/js/bundle.js');
+        //$fields->addFieldToTab('Root.History', HistoryViewerField::create('HistoryViewer'));
     }
 }
