@@ -1,0 +1,21 @@
+{
+  "name": "twohill/silverstripe-versioned-members",
+  "description": "Adds versioning to Member objects",
+  "type": "silverstripe-vendormodule",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Al Twohill",
+      "email": "al@twohill.nz"
+    }
+  ],
+  "require": {
+    "silverstripe/versioned-admin": "^1.1"
+  },
+  "extra": {
+    "expose": [
+      "client/dist"
+    ]
+  }
+}

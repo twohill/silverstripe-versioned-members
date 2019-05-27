@@ -1,0 +1,10 @@
+SilverStripe\GraphQL\Manager:
+  schemas:
+    admin:
+      scaffolding:
+        types:
+          SilverStripe\Security\Member:
+            fields: [ID, LastEdited]
+            operations:
+              readOne: true
+              rollback: true

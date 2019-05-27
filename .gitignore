@@ -1,0 +1,6 @@
+.idea/
+yarn.lock
+composer.lock
+node_modules/
+resources/
+vendor/

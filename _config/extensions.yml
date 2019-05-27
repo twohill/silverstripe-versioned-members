@@ -1,0 +1,4 @@
+SilverStripe\Security\Member:
+  extensions:
+    - Twohill\VersionedMembers\VersionedMemberExtension
+    - SilverStripe\Versioned\Versioned.versioned
